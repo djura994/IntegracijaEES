@@ -9,7 +9,7 @@ using System.Text;
 using System.Xml;
 using FTN.Common;
 using FTN.Services.NetworkModelService.DataModel.Core;
-using FTN.Services.NetworkModelService.DataModel.Wires;
+//using FTN.Services.NetworkModelService.DataModel.Wires; 
 using FTN.Services.NetworkModelService.DataModel;
 
 
@@ -122,7 +122,7 @@ namespace FTN.Services.NetworkModelService
 			IdentifiedObject io = null;			
 			switch ((DMSType)type)
 			{
-				case DMSType.BASEVOLTAGE:
+			/*	case DMSType.BASEVOLTAGE:
 					io = new BaseVoltage(globalId);
 					break;
 
@@ -137,7 +137,7 @@ namespace FTN.Services.NetworkModelService
 					break;
 				case DMSType.WINDINGTEST:
 					io = new WindingTest(globalId);
-					break;			
+					break;	*/		
 
 				default:					
 					string message = String.Format("Failed to create entity because specified type ({0}) is not supported.", type);

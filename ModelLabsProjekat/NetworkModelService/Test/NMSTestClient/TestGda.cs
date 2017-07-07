@@ -164,7 +164,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 			try
 			{						
 				List<ModelCode> properties = new List<ModelCode>();
-                properties.Add(ModelCode.IDOBJ_DESCRIPTION);
+                properties.Add(ModelCode.IDOBJ_ALIASNAME);
                 properties.Add(ModelCode.IDOBJ_MRID);
                 properties.Add(ModelCode.IDOBJ_NAME);
 						
