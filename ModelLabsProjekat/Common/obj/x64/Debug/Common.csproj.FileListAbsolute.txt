@@ -4,6 +4,5 @@ C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\Common\obj\x64\Debug\FTN.Com
 C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\Common\obj\x64\Debug\FTN.Common.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\FTN.Common.dll
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\FTN.Common.pdb
-C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\Common\obj\x64\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\Common\obj\x64\Debug\FTN.Common.dll
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\Common\obj\x64\Debug\FTN.Common.pdb
