@@ -9,37 +9,112 @@
 	public static class PowerTransformerConverter
 	{
 
-		#region Populate ResourceDescription
-		public static void PopulateIdentifiedObjectProperties(FTN.IdentifiedObject cimIdentifiedObject, ResourceDescription rd)
-		{
-			if ((cimIdentifiedObject != null) && (rd != null))
-			{
-				if (cimIdentifiedObject.MRIDHasValue)
-				{
-					rd.AddProperty(new Property(ModelCode.IDOBJ_MRID, cimIdentifiedObject.MRID));
-				}
-				if (cimIdentifiedObject.NameHasValue)
-				{
-					rd.AddProperty(new Property(ModelCode.IDOBJ_NAME, cimIdentifiedObject.Name));
-				}
-				
-			}
-		}
+        #region Populate ResourceDescription
+        public static void PopulateIdentifiedObjectProperties(FTN.IdentifiedObject cimIdentifiedObject, ResourceDescription rd)
+        {
+            if ((cimIdentifiedObject != null) && (rd != null))
+            {
+                if (cimIdentifiedObject.MRIDHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.IDOBJ_MRID, cimIdentifiedObject.MRID));
+                }
+                if (cimIdentifiedObject.NameHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.IDOBJ_NAME, cimIdentifiedObject.Name));
+                }
+                if (cimIdentifiedObject.AliasNameHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.IDOBJ_ALIASNAME, cimIdentifiedObject.AliasName));
+                }
+            }
+        }
 
-		
 
-		public static void PopulatePowerSystemResourceProperties(FTN.PowerSystemResource cimPowerSystemResource, ResourceDescription rd, ImportHelper importHelper, TransformAndLoadReport report)
-		{
-			if ((cimPowerSystemResource != null) && (rd != null))
-			{
-				
-			}
-		}
+        public static void PopulatePowerSystemResourceProperties(FTN.PowerSystemResource cimPowerSystemResource, ResourceDescription rd)
+        {
+            if ((cimPowerSystemResource != null) && (rd != null))
+            {
+                PowerTransformerConverter.PopulateIdentifiedObjectProperties(cimPowerSystemResource, rd);
+            }
+        }
 
-		#endregion Populate ResourceDescription
+        public static void PopulateRegulatingControlProperties(RegulatingControl cimRegulatingControl, ResourceDescription rd)
+        {
+            if ((cimRegulatingControl != null) && (rd != null))
+            {
+                PowerTransformerConverter.PopulatePowerSystemResourceProperties(cimRegulatingControl, rd);
 
-		#region Enums convert
-		public static PhaseCode GetDMSPhaseCode(PhaseCode phases)
+                if (cimRegulatingControl.DiscreteHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.REGUCONTROL_DISCRETE, cimRegulatingControl.Discrete));
+                }
+           /*     if (cimRegulatingControl.ModeHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.REGUCONTROL_MODE, (short)GetDMSRegulatingControlModeKind(cimRegulatingControl.Mode)));
+                }
+                if (cimRegulatingControl.MonitoredPhaseHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.REGUCONTROL_MONPHASE, (short)GetDMSPhaseCode(cimRegulatingControl.MonitoredPhase)));
+                }*/
+            }
+        }
+
+        public static void PopulateEquipmentProperties(FTN.Equipment cimEquipment, ResourceDescription rd)
+        {
+            if ((cimEquipment != null) && (rd != null))
+            {
+                PowerTransformerConverter.PopulatePowerSystemResourceProperties(cimEquipment, rd);
+
+                if (cimEquipment.AggregateHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.EQUIPMENT_AGGREGATE, cimEquipment.Aggregate));
+                }
+                if (cimEquipment.NormallyInServiceHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.EQUIPMENT_NORINSERV, cimEquipment.NormallyInService));
+                }
+            }
+        }
+
+        public static void PopulateConductingEquipmentProperties(FTN.ConductingEquipment cimConductingEquipment, ResourceDescription rd)
+        {
+            if ((cimConductingEquipment != null) && (rd != null))
+            {
+                PowerTransformerConverter.PopulateEquipmentProperties(cimConductingEquipment, rd);
+            }
+        }
+
+
+        public static void PopulateSwitchProperties(FTN.Switch cimSwitch, ResourceDescription rd)
+        {
+            if ((cimSwitch != null) && (rd != null))
+            {
+                PowerTransformerConverter.PopulateConductingEquipmentProperties(cimSwitch, rd);
+
+                if (cimSwitch.NormalOpenHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.SWITCH_NOROPEN, cimSwitch.NormalOpen));
+                }
+                if (cimSwitch.RetainedHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.SWITCH_RETAINED, cimSwitch.Retained));
+                }
+                if (cimSwitch.SwitchOnCountHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.SWITCH_SWONCOUNT, cimSwitch.SwitchOnCount));
+                }
+                if (cimSwitch.SwitchOnDateHasValue)
+                {
+                    rd.AddProperty(new Property(ModelCode.SWITCH_SWONDATE, cimSwitch.SwitchOnDate.Ticks));
+                }
+
+            }
+        }
+
+        #endregion Populate ResourceDescription
+
+        #region Enums convert
+        public static PhaseCode GetDMSPhaseCode(PhaseCode phases)
 		{
 			switch (phases)
 			{
