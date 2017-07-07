@@ -1,0 +1,5 @@
+D:\Vezbe\11\ModelLabs\bin64\FTN.Common.dll
+D:\Vezbe\11\ModelLabs\bin64\FTN.Common.pdb
+D:\Vezbe\11\ModelLabs\Common\obj\x64\Release\ResolveAssemblyReference.cache
+D:\Vezbe\11\ModelLabs\Common\obj\x64\Release\FTN.Common.dll
+D:\Vezbe\11\ModelLabs\Common\obj\x64\Release\FTN.Common.pdb

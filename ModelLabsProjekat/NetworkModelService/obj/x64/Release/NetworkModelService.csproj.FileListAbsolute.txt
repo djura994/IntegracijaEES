@@ -1,0 +1,5 @@
+D:\Vezbe\11\ModelLabs\bin64\FTN.Services.NetworkModelService.dll
+D:\Vezbe\11\ModelLabs\bin64\FTN.Services.NetworkModelService.pdb
+D:\Vezbe\11\ModelLabs\NetworkModelService\obj\x64\Release\ResolveAssemblyReference.cache
+D:\Vezbe\11\ModelLabs\NetworkModelService\obj\x64\Release\FTN.Services.NetworkModelService.dll
+D:\Vezbe\11\ModelLabs\NetworkModelService\obj\x64\Release\FTN.Services.NetworkModelService.pdb

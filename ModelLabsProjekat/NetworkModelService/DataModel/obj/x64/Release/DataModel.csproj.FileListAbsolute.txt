@@ -1,0 +1,6 @@
+D:\DMS\TelventDMS-3.4.0\Services\NetworkModelService\DataModel\obj\x64\Release\ResolveAssemblyReference.cache
+D:\Vezbe\11\ModelLabs\bin64\FTN.DataModel.dll
+D:\Vezbe\11\ModelLabs\bin64\FTN.DataModel.pdb
+D:\Vezbe\11\ModelLabs\NetworkModelService\DataModel\obj\x64\Release\ResolveAssemblyReference.cache
+D:\Vezbe\11\ModelLabs\NetworkModelService\DataModel\obj\x64\Release\FTN.DataModel.dll
+D:\Vezbe\11\ModelLabs\NetworkModelService\DataModel\obj\x64\Release\FTN.DataModel.pdb

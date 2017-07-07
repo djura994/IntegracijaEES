@@ -1,0 +1,12 @@
+D:\DMS\TelventDMS-3.4.0\bin64\DataItemMigrationConfig.xml
+D:\DMS\TelventDMS-3.4.0\bin64\TestScenarios.xml
+D:\DMS\TelventDMS-3.4.0\bin64\TestInterfaceClient.exe.config
+D:\DMS\TelventDMS-3.4.0\bin64\TestInterfaceClient.exe
+D:\DMS\TelventDMS-3.4.0\bin64\TestInterfaceClient.pdb
+D:\DMS\TelventDMS-3.4.0\Services\NetworkModelService\Test\TestInterfaceClient\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\DMS\TelventDMS-3.4.0\Services\NetworkModelService\Test\TestInterfaceClient\obj\x64\Debug\TestInterfaceClient.exe
+D:\DMS\TelventDMS-3.4.0\Services\NetworkModelService\Test\TestInterfaceClient\obj\x64\Debug\TestInterfaceClient.pdb
+D:\Vezbe\NetworkModelService\Test\TestInterfaceClient\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Vezbe\NetworkModelService\Test\TestInterfaceClient\obj\x64\Debug\TestInterfaceClient.pdb
+D:\VezbeNMS\NetworkModelService\Test\TestInterfaceClient\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\VezbeNMS\NetworkModelService\Test\TestInterfaceClient\obj\x64\Debug\TestInterfaceClient.pdb

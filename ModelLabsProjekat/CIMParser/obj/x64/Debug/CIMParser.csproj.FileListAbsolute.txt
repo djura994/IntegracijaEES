@@ -1,0 +1,9 @@
+C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\bin64\CIMParser.dll
+C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\bin64\CIMParser.pdb
+C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\CIMParser\obj\x64\Debug\CIMParser.dll
+C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\CIMParser\obj\x64\Debug\CIMParser.pdb
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\CIMParser.dll
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\CIMParser.pdb
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMParser\obj\x64\Debug\CIMParser.csprojResolveAssemblyReference.cache
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMParser\obj\x64\Debug\CIMParser.dll
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMParser\obj\x64\Debug\CIMParser.pdb

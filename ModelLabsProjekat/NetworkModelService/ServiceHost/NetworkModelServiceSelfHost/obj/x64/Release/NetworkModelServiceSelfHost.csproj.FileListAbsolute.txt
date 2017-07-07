@@ -1,0 +1,6 @@
+D:\Vezbe\11\ModelLabs\bin64\FTN_NetworkModelService.exe.config
+D:\Vezbe\11\ModelLabs\bin64\FTN_NetworkModelService.exe
+D:\Vezbe\11\ModelLabs\bin64\FTN_NetworkModelService.pdb
+D:\Vezbe\11\ModelLabs\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Release\ResolveAssemblyReference.cache
+D:\Vezbe\11\ModelLabs\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Release\FTN_NetworkModelService.exe
+D:\Vezbe\11\ModelLabs\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Release\FTN_NetworkModelService.pdb

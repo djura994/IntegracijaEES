@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cims="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:msg="http://langdale.com.au/2005/Message#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:uml="http://langdale.com.au/2005/UML#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.0="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+  xml:base="http://iec.ch/TC57/2010/CIM-schema-cim15" > 
+  <rdf:Description rdf:about="#TransformerWinding.windingType">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The type of winding.</rdfs:comment>
+    <rdfs:label>windingType</rdfs:label>
+    <rdfs:range rdf:resource="#WindingType"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Wires">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61970"/>
+    <rdfs:comment>An extension to the Core and Topology package that models information on the electrical characteristics of Transmission and Distribution networks. This package is used by network applications such as State Estimation, Load Flow and Optimal Power Flow.</rdfs:comment>
+    <rdfs:label>Wires</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ApparentPower">
+    <rdfs:comment>Product of the RMS value of the voltage and the RMS value of the current</rdfs:comment>
+    <rdfs:label>ApparentPower</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest">
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdfs:comment>Physical winding test data for the winding/tap pairs of a transformer (or phase shifter). This test data can be used to derive other attributes of specific transformer or phase shifter models.</rdfs:comment>
+    <rdfs:label>WindingTest</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s2N">
+    <rdfs:comment>Secondary phase 2 and neutral.</rdfs:comment>
+    <rdfs:label>s2N</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerFunctionKind.other">
+    <rdfs:label>other</rdfs:label>
+    <rdf:type rdf:resource="#TransformerFunctionKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_IEC61970">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61970_IEC61968_combined"/>
+    <rdfs:comment>The ControlArea package models area specifications which can be used for a variety of purposes.  The package as a whole models potentially overlapping control area specifications for the purpose of actual generation control, load forecast area load capture, or powerflow based analysis.</rdfs:comment>
+    <rdfs:label>IEC61970</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s1N">
+    <rdfs:comment>Secondary phase 1 and neutral.</rdfs:comment>
+    <rdfs:label>s1N</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingType.tertiary">
+    <rdfs:label>tertiary</rdfs:label>
+    <rdf:type rdf:resource="#WindingType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerFunctionKind">
+    <cims:belongsToCategory rdf:resource="#Package_InfAssetModels"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
+    <rdfs:comment>Function of a transformer.</rdfs:comment>
+    <rdfs:label>TransformerFunctionKind</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PositionPoint.yPosition">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Y axis position.</rdfs:comment>
+    <rdfs:label>yPosition</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#PositionPoint"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerTransformer.function">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>Purpose of the transformer within the network. (Copied from 61970:TransformerAsset)</rdfs:comment>
+    <rdfs:label>function</rdfs:label>
+    <rdfs:range rdf:resource="#TransformerFunctionKind"/>
+    <rdfs:domain rdf:resource="#PowerTransformer"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ABC">
+    <rdfs:label>ABC</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_IEC61968">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61970_IEC61968_combined"/>
+    <rdfs:comment>This package contains the core information classes that support end device applications with specialized classes for metering equipment and remote reading functions. These classes are generally associated with the point where a service is delivered to the customer.</rdfs:comment>
+    <rdfs:label>IEC61968</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PositionPoint.CoordinateSystem">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdfs:comment>Coordinate system in which the coordinates of this position point are expressed.</rdfs:comment>
+    <rdfs:label>CoordinateSystem</rdfs:label>
+    <rdfs:range rdf:resource="#CoordinateSystem"/>
+    <rdfs:domain rdf:resource="#PositionPoint"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Informative">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61970"/>
+    <rdfs:comment>This package is responsible for Settlement and Billing. These classes represent the legal entities who participate in formal or informal agreements.</rdfs:comment>
+    <rdfs:label>Informative</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection.I">
+    <rdfs:comment>Independent winding, for single-phase connections</rdfs:comment>
+    <rdfs:label>I</rdfs:label>
+    <rdf:type rdf:resource="#WindingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Voltage">
+    <rdfs:comment>Electrical voltage.</rdfs:comment>
+    <rdfs:label>Voltage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection.A">
+    <rdfs:comment>Autotransformer common winding</rdfs:comment>
+    <rdfs:label>A</rdfs:label>
+    <rdf:type rdf:resource="#WindingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding.grounded">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Set if the winding is grounded.</rdfs:comment>
+    <rdfs:label>grounded</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Location.corporateCode">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Utility-specific code for the location.</rdfs:comment>
+    <rdfs:label>corporateCode</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Location"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerFunctionKind.powerTransformer">
+    <rdfs:label>powerTransformer</rdfs:label>
+    <rdf:type rdf:resource="#TransformerFunctionKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CoordinateSystem.Location">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdfs:comment>Location described by using position points in this coordinate system.</rdfs:comment>
+    <rdfs:label>Location</rdfs:label>
+    <rdfs:range rdf:resource="#Location"/>
+    <rdfs:domain rdf:resource="#CoordinateSystem"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingType.secondary">
+    <rdfs:label>secondary</rdfs:label>
+    <rdf:type rdf:resource="#WindingType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerFunctionKind.autotransformer">
+    <rdfs:label>autotransformer</rdfs:label>
+    <rdf:type rdf:resource="#TransformerFunctionKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.A">
+    <rdfs:label>A</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject.description">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</rdfs:comment>
+    <rdfs:label>description</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#IdentifiedObject"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PositionPoint.scaleFactor">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>scaleFactor can be used to override default symbol sizes.</rdfs:comment>
+    <rdfs:label>scaleFactor</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="#PositionPoint"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerSystemResource">
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <rdfs:comment>A power system resource can be an item of equipment such as a Switch, an EquipmentContainer containing many individual items of equipment such as a 
+Substation, or an organisational entity such as Company or SubControlArea.  This provides for the nesting of collections of PowerSystemResources within other PowerSystemResources. For example, a Switch could be a member of a Substation and a Substation could be a member of a division of a Company.</rdfs:comment>
+    <rdfs:label>PowerSystemResource</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection.Yn">
+    <rdfs:comment>Wye, with neutral brought out for grounding.</rdfs:comment>
+    <rdfs:label>Yn</rdfs:label>
+    <rdf:type rdf:resource="#WindingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingType">
+    <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
+    <rdfs:comment>Winding type.</rdfs:comment>
+    <rdfs:label>WindingType</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.BC">
+    <rdfs:label>BC</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.phaseShift">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The phase shift measured at the open-circuited "to" winding, with the "from" winding set to the "from" winding's rated voltage and all other windings open-circuited.</rdfs:comment>
+    <rdfs:label>phaseShift</rdfs:label>
+    <cims:dataType rdf:resource="#AngleDegrees"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Location">
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <cims:belongsToCategory rdf:resource="#Package_Common"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdfs:comment>The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It is defined with one or more postition points (coordinates) in a given coordinate system.</rdfs:comment>
+    <rdfs:label>Location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection.Zn">
+    <rdfs:comment>ZigZag, with neutral brought out for grounding.</rdfs:comment>
+    <rdfs:label>Zn</rdfs:label>
+    <rdf:type rdf:resource="#WindingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.AC">
+    <rdfs:label>AC</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.B">
+    <rdfs:label>B</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.AB">
+    <rdfs:label>AB</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CoordinateSystem">
+    <cims:belongsToCategory rdf:resource="#Package_Common"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdfs:comment>Coordinate reference system.</rdfs:comment>
+    <rdfs:label>CoordinateSystem</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_InfAssetModels">
+    <cims:belongsToCategory rdf:resource="#Package_Informative"/>
+    <rdfs:label>InfAssetModels</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Equipment">
+    <rdfs:subClassOf rdf:resource="#PowerSystemResource"/>
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <rdfs:comment>The parts of a power system that are physical devices, electronic or mechanical</rdfs:comment>
+    <rdfs:label>Equipment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Equipment.private">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>True if equipment is private property.</rdfs:comment>
+    <rdfs:label>private</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="#Equipment"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerFunctionKind.voltageRegulator">
+    <rdfs:label>voltageRegulator</rdfs:label>
+    <rdf:type rdf:resource="#TransformerFunctionKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ABN">
+    <rdfs:label>ABN</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.leakageImpedance0Percent">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Zero-sequence leakage impedance [%]. When unavailable, use same value as for the direct-sequence impedance.</rdfs:comment>
+    <rdfs:label>leakageImpedance0Percent</rdfs:label>
+    <cims:dataType rdf:resource="#PerCent"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ACN">
+    <rdfs:label>ACN</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerSystemResource.Location">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdfs:comment>Location of this power system resource.</rdfs:comment>
+    <rdfs:label>Location</rdfs:label>
+    <rdfs:range rdf:resource="#Location"/>
+    <rdfs:domain rdf:resource="#PowerSystemResource"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PerCent">
+    <rdfs:comment>Normally 0 - 100 on a defined base</rdfs:comment>
+    <rdfs:label>PerCent</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode">
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
+    <rdfs:comment>Enumeration of phase identifiers. Allows designation of phases for both transmission and distribution equipment, circuits and loads.
+Residential and small commercial loads are often served from single-phase, or split-phase, secondary circuits. Phases 1 and 2 refer to hot wires that are 180 degrees out of phase, while N refers to the neutral wire. Through single-phase transformer connections, these secondary circuits may be served from one or two of the primary phases A, B, and C. For three-phase loads, use the A, B, C phase codes instead of s12N.</rdfs:comment>
+    <rdfs:label>PhaseCode</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.C">
+    <rdfs:label>C</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ConductingEquipment.BaseVoltage">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdfs:comment>Use association to ConductingEquipment only when there is no VoltageLevel container used.</rdfs:comment>
+    <rdfs:label>BaseVoltage</rdfs:label>
+    <rdfs:range rdf:resource="#BaseVoltage"/>
+    <rdfs:domain rdf:resource="#ConductingEquipment"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.leakageImpedanceMinPercent">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The leakage impedance measured at the lowest position of the tap changer</rdfs:comment>
+    <rdfs:label>leakageImpedanceMinPercent</rdfs:label>
+    <cims:dataType rdf:resource="#PerCent"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerFunctionKind.secondaryTransformer">
+    <rdfs:label>secondaryTransformer</rdfs:label>
+    <rdf:type rdf:resource="#TransformerFunctionKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.From_TransformerWinding">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdfs:comment>The winding from which the test was conducted</rdfs:comment>
+    <rdfs:label>From_TransformerWinding</rdfs:label>
+    <rdfs:range rdf:resource="#TransformerWinding"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ConductingEquipment.ratedVoltage">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>Rated voltage of conducting equipment (can be different from BaseVoltage).</rdfs:comment>
+    <rdfs:label>ratedVoltage</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="#ConductingEquipment"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PositionPoint.rotationAngle">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>For display purposes, rotationAngle will define how the device will be drawn.</rdfs:comment>
+    <rdfs:label>rotationAngle</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="#PositionPoint"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Core">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61970"/>
+    <rdfs:comment>Contains the core PowerSystemResource and ConductingEquipment entities shared by all applications plus common collections of those entities. Not all applications require all the Core entities.  This package does not depend on any other package except the Domain package, but most of the other packages have associations and generalizations that depend on it.</rdfs:comment>
+    <rdfs:label>Core</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.leakageImpedance">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The leakage impedance measured at the "from" winding  with the "to" winding short-circuited and all other windings open-circuited.  Leakage impedance is expressed in units based on the apparent power and voltage ratings of the "from" winding.</rdfs:comment>
+    <rdfs:label>leakageImpedance</rdfs:label>
+    <cims:dataType rdf:resource="#Impedance"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AngleDegrees">
+    <rdfs:comment>Measurement of angle in degrees</rdfs:comment>
+    <rdfs:label>AngleDegrees</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject.name">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:label>name</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#IdentifiedObject"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.loadLoss">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The load loss kW ("to" winding short-circuited) from the test report.</rdfs:comment>
+    <rdfs:label>loadLoss</rdfs:label>
+    <cims:dataType rdf:resource="#KWActivePower"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CoordinateSystem.name">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Name of this coordinate system.</rdfs:comment>
+    <rdfs:label>name</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#CoordinateSystem"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ConductingEquipment">
+    <rdfs:subClassOf rdf:resource="#Equipment"/>
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <rdfs:comment>The parts of the power system that are designed to carry current or that are conductively connected therewith. ConductingEquipment is contained within an EquipmentContainer that may be a Substation, or a VoltageLevel or a Bay within a Substation.</rdfs:comment>
+    <rdfs:label>ConductingEquipment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject.mRID">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>A Model Authority issues mRIDs. Given that each Model Authority has a unique id and this id is part of the mRID, then the mRID is globally unique.</rdfs:comment>
+    <rdfs:label>mRID</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#IdentifiedObject"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject">
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <rdfs:comment>This is a root class to provide common naming attributes for all classes needing naming attributes</rdfs:comment>
+    <rdfs:label>IdentifiedObject</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding.ratedU">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The rated voltage (phase-to-phase) of the winding, usually the same as the neutral voltage.</rdfs:comment>
+    <rdfs:label>ratedU</rdfs:label>
+    <cims:dataType rdf:resource="#Voltage"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerTransformer.autotransformer">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>True if the transformer is an autotransfomer</rdfs:comment>
+    <rdfs:label>autotransformer</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="#PowerTransformer"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.leakageImpedanceMaxPercent">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>The leakage impedance measured at the highest position of the tap changer</rdfs:comment>
+    <rdfs:label>leakageImpedanceMaxPercent</rdfs:label>
+    <cims:dataType rdf:resource="#PerCent"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection.D">
+    <rdfs:comment>Delta</rdfs:comment>
+    <rdfs:label>D</rdfs:label>
+    <rdf:type rdf:resource="#WindingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s12N">
+    <rdfs:comment>Secondary phases 1, 2, and neutral.</rdfs:comment>
+    <rdfs:label>s12N</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding.PowerTransformer">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ofAggregate"/>
+    <rdfs:comment>A transformer has windings</rdfs:comment>
+    <rdfs:label>PowerTransformer</rdfs:label>
+    <rdfs:range rdf:resource="#PowerTransformer"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.N">
+    <rdfs:label>N</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Common">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61968"/>
+    <rdfs:comment>This package contains the information classes that support distribution management in general.</rdfs:comment>
+    <rdfs:label>Common</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.BCN">
+    <rdfs:label>BCN</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ABCN">
+    <rdfs:label>ABCN</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PositionPoint.xPosition">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>X axis position.</rdfs:comment>
+    <rdfs:label>xPosition</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#PositionPoint"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding.connectionType">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The type of connection of the winding.</rdfs:comment>
+    <rdfs:label>connectionType</rdfs:label>
+    <rdfs:range rdf:resource="#WindingConnection"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection.Z">
+    <rdfs:comment>ZigZag</rdfs:comment>
+    <rdfs:label>Z</rdfs:label>
+    <rdf:type rdf:resource="#WindingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#KWActivePower">
+    <rdfs:comment>Active power in kilowatts.</rdfs:comment>
+    <rdfs:label>KWActivePower</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Impedance">
+    <rdfs:comment>Ratio of voltage to current.</rdfs:comment>
+    <rdfs:label>Impedance</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BaseVoltage.nominalVoltage">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The PowerSystemResource's base voltage.</rdfs:comment>
+    <rdfs:label>nominalVoltage</rdfs:label>
+    <cims:dataType rdf:resource="#Voltage"/>
+    <rdfs:domain rdf:resource="#BaseVoltage"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Equipment.isUnderground">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>True if device belongs to underground layer.</rdfs:comment>
+    <rdfs:label>isUnderground</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="#Equipment"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection">
+    <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
+    <rdfs:comment>Winding connection type.</rdfs:comment>
+    <rdfs:label>WindingConnection</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding.ratedS">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The normal apparent power rating for the winding</rdfs:comment>
+    <rdfs:label>ratedS</rdfs:label>
+    <cims:dataType rdf:resource="#ApparentPower"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding.phaseToGroundVoltage">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Phase-to-ground voltage of the winding.</rdfs:comment>
+    <rdfs:label>phaseToGroundVoltage</rdfs:label>
+    <cims:dataType rdf:resource="#Voltage"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.BN">
+    <rdfs:label>BN</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PositionPoint">
+    <cims:belongsToCategory rdf:resource="#Package_Common"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdfs:comment>Set of spatial coordinates that determine a point. Use a single position point instance to desribe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values).</rdfs:comment>
+    <rdfs:label>PositionPoint</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding.phaseToPhaseVoltage">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>Phase-to-phase voltage of the winding.</rdfs:comment>
+    <rdfs:label>phaseToPhaseVoltage</rdfs:label>
+    <cims:dataType rdf:resource="#Voltage"/>
+    <rdfs:domain rdf:resource="#TransformerWinding"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerWinding">
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdfs:comment>A winding is associated with each defined terminal of a transformer (or phase shifter).</rdfs:comment>
+    <rdfs:label>TransformerWinding</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingTest.noLoadLoss">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The no load loss kW "to" winding open-circuited) from the test report.</rdfs:comment>
+    <rdfs:label>noLoadLoss</rdfs:label>
+    <cims:dataType rdf:resource="#KWActivePower"/>
+    <rdfs:domain rdf:resource="#WindingTest"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.AN">
+    <rdfs:label>AN</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Location.category">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Category by utility's corporate standards and practices, relative to the location itself (e.g., geographical, functional accounting, etc., not a given property that happens to exist at that location).</rdfs:comment>
+    <rdfs:label>category</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Location"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingConnection.Y">
+    <rdfs:comment>Wye</rdfs:comment>
+    <rdfs:label>Y</rdfs:label>
+    <rdf:type rdf:resource="#WindingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerTransformer">
+    <rdfs:subClassOf rdf:resource="#Equipment"/>
+    <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdfs:comment>An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow).</rdfs:comment>
+    <rdfs:label>PowerTransformer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingType.primary">
+    <rdfs:label>primary</rdfs:label>
+    <rdf:type rdf:resource="#WindingType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_IEC61970_IEC61968_combined">
+    <rdfs:comment>This package shows all the root level subpackage dependencies of the combined CIM model.</rdfs:comment>
+    <rdfs:label>IEC61970_IEC61968_combined</rdfs:label>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.CN">
+    <rdfs:label>CN</rdfs:label>
+    <rdf:type rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WindingType.quaternary">
+    <rdfs:label>quaternary</rdfs:label>
+    <rdf:type rdf:resource="#WindingType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PositionPoint.sequenceNumber">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Zero-relative sequence number of this point within a series of points.</rdfs:comment>
+    <rdfs:label>sequenceNumber</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="#PositionPoint"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ConductingEquipment.phases">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>Describes the phases carried by a conducting equipment.</rdfs:comment>
+    <rdfs:label>phases</rdfs:label>
+    <rdfs:range rdf:resource="#PhaseCode"/>
+    <rdfs:domain rdf:resource="#ConductingEquipment"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerSystemResource.customType">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ftn"/>
+    <rdfs:comment>Custom (project-specific) type of this object. For example, all supply transformers, regardless of winding count, can have a custom type named "Supply transformer".</rdfs:comment>
+    <rdfs:label>customType</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#PowerSystemResource"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BaseVoltage">
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdfs:comment>Defines a nominal base voltage which is referenced in the system.</rdfs:comment>
+    <rdfs:label>BaseVoltage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>
