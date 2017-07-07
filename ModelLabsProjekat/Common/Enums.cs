@@ -52,6 +52,19 @@ namespace FTN.Common
         s = 28
     }
 
+    public enum RegulatingControlModeKind : short
+    {
+        activePower = 1,
+        admittance = 2,
+        currentFlow = 3,
+        fiXed = 4,
+        powerFactor = 5,
+        reactivePower = 6,
+        temperature = 7,
+        timeScheduled = 8,
+        voltage = 9
+    }
+
     public enum TransformerFunction : short
 	{
 		Supply = 1,				// Supply transformer

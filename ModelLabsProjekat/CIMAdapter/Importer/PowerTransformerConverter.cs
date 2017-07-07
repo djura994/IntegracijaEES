@@ -135,7 +135,32 @@
                     return UnitSymbol.none;
             }
         }
-
+        public static RegulatingControlModeKind GetDMSRegulatingControlModeKind(RegulatingControlModeKind regulatingControlModeKind)
+        {
+            switch (regulatingControlModeKind)
+            {
+                case RegulatingControlModeKind.activePower:
+                    return RegulatingControlModeKind.activePower;
+                case RegulatingControlModeKind.admittance:
+                    return RegulatingControlModeKind.admittance;
+                case RegulatingControlModeKind.currentFlow:
+                    return RegulatingControlModeKind.currentFlow;
+                case RegulatingControlModeKind.fiXed:
+                    return RegulatingControlModeKind.fiXed;
+                case RegulatingControlModeKind.powerFactor:
+                    return RegulatingControlModeKind.powerFactor;
+                case RegulatingControlModeKind.reactivePower:
+                    return RegulatingControlModeKind.reactivePower;
+                case RegulatingControlModeKind.temperature:
+                    return RegulatingControlModeKind.temperature;
+                case RegulatingControlModeKind.timeScheduled:
+                    return RegulatingControlModeKind.timeScheduled;
+                case RegulatingControlModeKind.voltage:
+                    return RegulatingControlModeKind.voltage;
+                default:
+                    return RegulatingControlModeKind.voltage;
+            }
+        }
 
         #endregion Enums convert
     }
