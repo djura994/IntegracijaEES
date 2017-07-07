@@ -95,6 +95,7 @@
     <Compile Include="LoadModel\Season.cs" />
     <Compile Include="LoadModel\SeasonDayTypeSchedule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wires\Breaker.cs" />
     <Compile Include="Wires\ProtectedSwitch.cs" />
     <Compile Include="Wires\RegulatingControl.cs" />
     <Compile Include="Wires\RegulationSchedule.cs" />
