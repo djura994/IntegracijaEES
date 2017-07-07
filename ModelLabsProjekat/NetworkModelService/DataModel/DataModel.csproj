@@ -84,10 +84,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\BasicIntervalSchedule.cs" />
     <Compile Include="Core\ConductingEquipment.cs" />
     <Compile Include="Core\Equipment.cs" />
     <Compile Include="Core\IdentifiedObject.cs" />
     <Compile Include="Core\PowerSystemResource.cs" />
+    <Compile Include="Core\RegularIntervalSchedule.cs" />
+    <Compile Include="Core\RegularTimePoint.cs" />
+    <Compile Include="LoadModel\DayType.cs" />
+    <Compile Include="LoadModel\Season.cs" />
+    <Compile Include="LoadModel\SeasonDayTypeSchedule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

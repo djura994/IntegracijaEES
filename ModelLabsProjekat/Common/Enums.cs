@@ -21,8 +21,38 @@ namespace FTN.Common
 		ABC = 0xE,
 		ABCN = 0xF
 	}
-	
-	public enum TransformerFunction : short
+    public enum UnitSymbol : short
+    {
+        A = 1,
+        F = 2,
+        H = 3,
+        Hz = 4,
+        J = 5,
+        N = 6,
+        Pa = 7,
+        S = 8,
+        V = 9,
+        VA = 10,
+        VAh = 11,
+        VAr = 12,
+        VArh = 13,
+        W = 14,
+        Wh = 15,
+        deg = 16,
+        degC = 17,
+        g = 18,
+        h = 19,
+        m = 20,
+        m2 = 21,
+        m3 = 22,
+        min = 24,
+        none = 25,
+        ohm = 26,
+        rad = 27,
+        s = 28
+    }
+
+    public enum TransformerFunction : short
 	{
 		Supply = 1,				// Supply transformer
 		Consumer = 2,			// Transformer supplying a consumer
