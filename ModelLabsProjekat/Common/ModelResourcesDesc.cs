@@ -865,24 +865,27 @@ namespace FTN.Common
 		# region Initialization of metadata
 
 		private void InitializeTypeIdsInInsertOrder()
-		{			
-	/*		typeIdsInInsertOrder.Add(ModelCode.BASEVOLTAGE);
-			typeIdsInInsertOrder.Add(ModelCode.LOCATION);
-			typeIdsInInsertOrder.Add(ModelCode.POWERTR);
-			typeIdsInInsertOrder.Add(ModelCode.TRWINDING);
-			typeIdsInInsertOrder.Add(ModelCode.WINDINGTEST);	
-            */		
-		}
+		{
+            		typeIdsInInsertOrder.Add(ModelCode.DAYTYPE);
+                    typeIdsInInsertOrder.Add(ModelCode.SEASON);
+                    typeIdsInInsertOrder.Add(ModelCode.REGUCONTROL);
+                    typeIdsInInsertOrder.Add(ModelCode.REGUSCHEDULE);
+                    typeIdsInInsertOrder.Add(ModelCode.RTP);
+                    typeIdsInInsertOrder.Add(ModelCode.SWITCHSCH);
+                    typeIdsInInsertOrder.Add(ModelCode.BREAKER);
+
+
+        }
 
 		private void InitializeNotSettablePropertyIds()
-		{			
-		/*	notSettablePropertyIds.Add(ModelCode.IDOBJ_GID);
-			notSettablePropertyIds.Add(ModelCode.BASEVOLTAGE_CONDEQS);
-			notSettablePropertyIds.Add(ModelCode.LOCATION_PSRS);
-			notSettablePropertyIds.Add(ModelCode.TRWINDING_TESTS);
-            notSettablePropertyIds.Add(ModelCode.POWERTR_WINDINGS);	
-            */
-		}
+		{
+            notSettablePropertyIds.Add(ModelCode.IDOBJ_GID);
+            notSettablePropertyIds.Add(ModelCode.REGUCONTROL_REGSCHEDULE);
+            notSettablePropertyIds.Add(ModelCode.DAYTYPE_SDTS);
+            notSettablePropertyIds.Add(ModelCode.SEASON_SDTS);
+            notSettablePropertyIds.Add(ModelCode.REGINTERVSCHED_TIMEPOINTS);
+
+        }
 	
 		# endregion Initialization of metadata
 
