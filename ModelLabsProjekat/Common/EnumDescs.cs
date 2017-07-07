@@ -12,7 +12,13 @@ namespace FTN.Common
 		public EnumDescs()
 		{
             		property2enumType.Add(ModelCode.REGUCONTROL_MONPHASE, typeof(PhaseCode));
-                    
+                    property2enumType.Add(ModelCode.BIS_VAL1UNIT, typeof(UnitSymbol));
+                    property2enumType.Add(ModelCode.REGUCONTROL_MODE, typeof(RegulatingControlModeKind));
+
+
+
+
+
         }
 
         public List<string> GetEnumList(ModelCode propertyId)
