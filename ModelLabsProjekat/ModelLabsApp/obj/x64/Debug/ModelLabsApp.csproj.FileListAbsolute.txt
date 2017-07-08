@@ -9,11 +9,11 @@ C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\M
 C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.exe
 C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\ModelLabsApp.exe.config
-C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.exe
-C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\ModelLabsApp.exe
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\ModelLabsApp.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csprojResolveAssemblyReference.cache
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.ModelLabsAppForm.resources
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.Properties.Resources.resources
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.GenerateResource.Cache
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.exe
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\ModelLabsApp\obj\x64\Debug\ModelLabsApp.pdb

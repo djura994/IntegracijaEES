@@ -4,7 +4,6 @@ C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\bin\Debug\UICli
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\bin\Debug\FTN.Common.dll
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\bin\Debug\NMSTestClient.exe
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\bin\Debug\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.dll
-C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\bin\Debug\FTN.Common.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\bin\Debug\NMSTestClient.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\bin\Debug\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\UIClient\obj\Debug\UIClient.csprojResolveAssemblyReference.cache

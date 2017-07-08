@@ -30,6 +30,6 @@ C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\NetworkModelService\DataMode
 C:\Users\Nemanja\Desktop\Projekat\ModelLabsProjekat\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.pdb
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\FTN.DataModel.dll
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\bin64\FTN.DataModel.pdb
-C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csprojResolveAssemblyReference.cache
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.dll
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.pdb
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csprojResolveAssemblyReference.cache

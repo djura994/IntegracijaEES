@@ -83,3 +83,290 @@
 7/8/2017 3:16:58 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
 7/8/2017 3:16:58 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
 7/8/2017 3:16:58 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002)..
+7/8/2017 3:27:45 PM : Starting Network Model Service...
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 3:27:46 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:27:46 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:27:46 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000100000002).
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000200000002).
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000400000002).
+7/8/2017 3:27:46 PM : Inserting entity with GID (0000000500000002).
+7/8/2017 3:27:46 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:27:46 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:27:46 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:27:49 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 3:27:49 PM : Endpoints:
+7/8/2017 3:27:49 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 3:27:49 PM : Connection string: ../NetworkModelData.data
+7/8/2017 3:27:49 PM : Trace level: Info
+7/8/2017 3:27:49 PM : The Network Model Service is started.
+7/8/2017 3:27:49 PM : Press <Enter> to stop the service.
+7/8/2017 3:28:04 PM : Applying  delta to network model.
+7/8/2017 3:28:04 PM : Inserting entity with GID (0000000100000003).
+7/8/2017 3:28:04 PM : Inserting entity with GID (0000000200000003).
+7/8/2017 3:28:04 PM : Inserting entity with GID (0000000400000003).
+7/8/2017 3:28:04 PM : Inserting entity with GID (0000000500000003).
+7/8/2017 3:28:04 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:28:04 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:28:04 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003)..
+7/8/2017 3:29:34 PM : Starting Network Model Service...
+7/8/2017 3:29:34 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 3:29:34 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 3:29:34 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 3:29:34 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 3:29:35 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:29:35 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:29:35 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000100000002).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000200000002).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000400000002).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000500000002).
+7/8/2017 3:29:35 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:29:35 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:29:35 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000100000003).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000200000003).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000400000003).
+7/8/2017 3:29:35 PM : Inserting entity with GID (0000000500000003).
+7/8/2017 3:29:35 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:29:35 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:29:35 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:29:37 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 3:29:37 PM : Endpoints:
+7/8/2017 3:29:38 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 3:29:38 PM : Connection string: ../NetworkModelData.data
+7/8/2017 3:29:38 PM : Trace level: Info
+7/8/2017 3:29:38 PM : The Network Model Service is started.
+7/8/2017 3:29:38 PM : Press <Enter> to stop the service.
+7/8/2017 3:29:53 PM : Applying  delta to network model.
+7/8/2017 3:29:53 PM : Inserting entity with GID (0000000100000004).
+7/8/2017 3:29:53 PM : Inserting entity with GID (0000000200000004).
+7/8/2017 3:29:53 PM : Inserting entity with GID (0000000400000004).
+7/8/2017 3:29:53 PM : Inserting entity with GID (0000000500000004).
+7/8/2017 3:29:53 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000004).
+7/8/2017 3:29:53 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000004).
+7/8/2017 3:29:53 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000004)..
+7/8/2017 3:32:59 PM : Starting Network Model Service...
+7/8/2017 3:32:59 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 3:32:59 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 3:32:59 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 3:32:59 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 3:32:59 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:32:59 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:33:00 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000100000002).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000200000002).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000400000002).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000500000002).
+7/8/2017 3:33:00 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:33:00 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:33:00 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000100000003).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000200000003).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000400000003).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000500000003).
+7/8/2017 3:33:00 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:33:00 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:33:00 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000003).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000100000004).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000200000004).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000400000004).
+7/8/2017 3:33:00 PM : Inserting entity with GID (0000000500000004).
+7/8/2017 3:33:00 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000004).
+7/8/2017 3:33:00 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000004).
+7/8/2017 3:33:00 PM : Error while applying delta (id = 4) during service initialization. Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000004).
+7/8/2017 3:33:03 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 3:33:03 PM : Endpoints:
+7/8/2017 3:33:03 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 3:33:03 PM : Connection string: ../NetworkModelData.data
+7/8/2017 3:33:03 PM : Trace level: Info
+7/8/2017 3:33:03 PM : The Network Model Service is started.
+7/8/2017 3:33:03 PM : Press <Enter> to stop the service.
+7/8/2017 3:33:17 PM : Applying  delta to network model.
+7/8/2017 3:33:17 PM : Inserting entity with GID (0000000100000005).
+7/8/2017 3:33:17 PM : Inserting entity with GID (0000000200000005).
+7/8/2017 3:33:17 PM : Inserting entity with GID (0000000400000005).
+7/8/2017 3:33:17 PM : Inserting entity with GID (0000000500000005).
+7/8/2017 3:33:17 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000005).
+7/8/2017 3:33:17 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000005).
+7/8/2017 3:33:17 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000005)..
+7/8/2017 4:01:47 PM : Starting Network Model Service...
+7/8/2017 4:01:48 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 4:01:48 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 4:01:48 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 4:01:48 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 4:01:48 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:01:51 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:01:51 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000100000002).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000200000002).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000400000002).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000500000002).
+7/8/2017 4:01:51 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:01:51 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:01:51 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000100000003).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000200000003).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000400000003).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000500000003).
+7/8/2017 4:01:51 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:01:51 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:01:51 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000100000004).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000200000004).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000400000004).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000500000004).
+7/8/2017 4:01:51 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:01:51 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:01:51 PM : Error while applying delta (id = 4) during service initialization. Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000100000005).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000200000005).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000400000005).
+7/8/2017 4:01:51 PM : Inserting entity with GID (0000000500000005).
+7/8/2017 4:01:51 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:01:51 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:01:51 PM : Error while applying delta (id = 5) during service initialization. Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:01:55 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 4:01:55 PM : Endpoints:
+7/8/2017 4:01:55 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 4:01:55 PM : Connection string: ../NetworkModelData.data
+7/8/2017 4:01:55 PM : Trace level: Info
+7/8/2017 4:01:55 PM : The Network Model Service is started.
+7/8/2017 4:01:55 PM : Press <Enter> to stop the service.
+7/8/2017 4:02:14 PM : Applying  delta to network model.
+7/8/2017 4:02:14 PM : Inserting entity with GID (0000000100000006).
+7/8/2017 4:02:14 PM : Inserting entity with GID (0000000200000006).
+7/8/2017 4:02:14 PM : Inserting entity with GID (0000000400000006).
+7/8/2017 4:02:14 PM : Inserting entity with GID (0000000500000006).
+7/8/2017 4:02:14 PM : Inserting entity with GID (0000000300000001).
+7/8/2017 4:02:14 PM : Inserting entity with GID (0000000600000001).
+7/8/2017 4:02:14 PM : Inserting entity with GID (0000000700000001).
+7/8/2017 4:02:14 PM : Unknown property id = PRSWITCH_BRCAP for entity (GID = 0x0000000700000001).
+7/8/2017 4:02:14 PM : Failed to insert entity (GID = 0x0000000700000001) into model. Unknown property id = PRSWITCH_BRCAP for entity (GID = 0x0000000700000001).
+7/8/2017 4:02:14 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000700000001) into model. Unknown property id = PRSWITCH_BRCAP for entity (GID = 0x0000000700000001)..
+7/8/2017 4:03:24 PM : Starting Network Model Service...
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 4:03:25 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:03:25 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:03:25 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000100000002).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000200000002).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000400000002).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000500000002).
+7/8/2017 4:03:25 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:03:25 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:03:25 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000100000003).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000200000003).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000400000003).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000500000003).
+7/8/2017 4:03:25 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:03:25 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:03:25 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000100000004).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000200000004).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000400000004).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000500000004).
+7/8/2017 4:03:25 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:03:25 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:03:25 PM : Error while applying delta (id = 4) during service initialization. Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:03:25 PM : Inserting entity with GID (0000000100000005).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000200000005).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000400000005).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000500000005).
+7/8/2017 4:03:26 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:03:26 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:03:26 PM : Error while applying delta (id = 5) during service initialization. Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000100000006).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000200000006).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000400000006).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000500000006).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000300000001).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000600000001).
+7/8/2017 4:03:26 PM : Inserting entity with GID (0000000700000001).
+7/8/2017 4:03:26 PM : Unknown property id = 1234286464573899018 for entity (GID = 0x0000000700000001).
+7/8/2017 4:03:26 PM : Failed to insert entity (GID = 0x0000000700000001) into model. Unknown property id = 1234286464573899018 for entity (GID = 0x0000000700000001).
+7/8/2017 4:03:26 PM : Error while applying delta (id = 6) during service initialization. Failed to insert entity (GID = 0x0000000700000001) into model. Unknown property id = 1234286464573899018 for entity (GID = 0x0000000700000001).
+7/8/2017 4:03:29 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 4:03:29 PM : Endpoints:
+7/8/2017 4:03:29 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 4:03:29 PM : Connection string: ../NetworkModelData.data
+7/8/2017 4:03:29 PM : Trace level: Info
+7/8/2017 4:03:29 PM : The Network Model Service is started.
+7/8/2017 4:03:29 PM : Press <Enter> to stop the service.
+7/8/2017 4:03:40 PM : Applying  delta to network model.
+7/8/2017 4:03:40 PM : Inserting entity with GID (0000000100000007).
+7/8/2017 4:03:40 PM : Inserting entity with GID (0000000200000007).
+7/8/2017 4:03:40 PM : Inserting entity with GID (0000000400000007).
+7/8/2017 4:03:40 PM : Inserting entity with GID (0000000500000007).
+7/8/2017 4:03:40 PM : Inserting entity with GID (0000000300000002).
+7/8/2017 4:03:40 PM : Inserting entity with GID (0000000600000002).
+7/8/2017 4:03:40 PM : Inserting entity with GID (0000000700000002).
+7/8/2017 4:03:40 PM : Applying delta to network model successfully finished.
+7/8/2017 4:05:40 PM : Starting Network Model Service...
+7/8/2017 4:05:40 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 4:05:40 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 4:05:40 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 4:05:40 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 4:05:40 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:05:41 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:05:41 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000001).
+7/8/2017 4:05:41 PM : Inserting entity with GID (0000000100000002).
+7/8/2017 4:05:41 PM : Inserting entity with GID (0000000200000002).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000400000002).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000500000002).
+7/8/2017 4:05:42 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:05:42 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:05:42 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000002).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000100000003).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000200000003).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000400000003).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000500000003).
+7/8/2017 4:05:42 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:05:42 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:05:42 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000003).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000100000004).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000200000004).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000400000004).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000500000004).
+7/8/2017 4:05:42 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:05:42 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:05:42 PM : Error while applying delta (id = 4) during service initialization. Failed to insert entity (GID = 0x0000000500000004) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000004).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000100000005).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000200000005).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000400000005).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000500000005).
+7/8/2017 4:05:42 PM : Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:05:42 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:05:42 PM : Error while applying delta (id = 5) during service initialization. Failed to insert entity (GID = 0x0000000500000005) into model. Unknown property id = 1301839359473221897 for entity (GID = 0x0000000500000005).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000100000006).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000200000006).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000400000006).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000500000006).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000300000001).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000600000001).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000700000001).
+7/8/2017 4:05:42 PM : Unknown property id = 1234286464573899018 for entity (GID = 0x0000000700000001).
+7/8/2017 4:05:42 PM : Failed to insert entity (GID = 0x0000000700000001) into model. Unknown property id = 1234286464573899018 for entity (GID = 0x0000000700000001).
+7/8/2017 4:05:42 PM : Error while applying delta (id = 6) during service initialization. Failed to insert entity (GID = 0x0000000700000001) into model. Unknown property id = 1234286464573899018 for entity (GID = 0x0000000700000001).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000100000007).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000200000007).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000400000007).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000500000007).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000300000002).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000600000002).
+7/8/2017 4:05:42 PM : Inserting entity with GID (0000000700000002).
+7/8/2017 4:05:44 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 4:05:44 PM : Endpoints:
+7/8/2017 4:05:44 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 4:05:44 PM : Connection string: ../NetworkModelData.data
+7/8/2017 4:05:44 PM : Trace level: Info
+7/8/2017 4:05:44 PM : The Network Model Service is started.
+7/8/2017 4:05:44 PM : Press <Enter> to stop the service.
