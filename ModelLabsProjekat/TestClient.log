@@ -16,3 +16,66 @@
 7/8/2017 2:56:00 PM : Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
 7/8/2017 2:56:00 PM : Apply update method failed. Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
 
+7/8/2017 3:07:01 PM : Network Model Service Test Client is up and running...
+7/8/2017 3:07:02 PM : Result directory: ../Results
+7/8/2017 3:07:04 PM : Apply update method started.
+7/8/2017 3:07:07 PM : Apply update method finished. 
+Update result: Failed
+Message: Applying delta to network model failed. Invalid delta. Some insert operations (count = 1) whose type (e.g 2) is not correct..
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000001
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000001
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x0000000300000001
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000001
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x0000000500000001
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000001
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x0000000700000001
+
+7/8/2017 3:07:52 PM : Getting extent values method started.
+7/8/2017 3:07:52 PM : Getting extent values method failed for 1.
+	Invalid Model Code: 1
+7/8/2017 3:12:28 PM : Network Model Service Test Client is up and running...
+7/8/2017 3:12:28 PM : Result directory: ../Results
+7/8/2017 3:12:31 PM : Apply update method started.
+7/8/2017 3:12:34 PM : Apply update method finished. 
+Update result: Failed
+Message: Applying delta to network model failed. Invalid delta. Some insert operations (count = 1) whose type (e.g 2) is not correct..
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000001
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000001
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x0000000300000001
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000001
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x0000000500000001
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000001
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x0000000700000001
+
+7/8/2017 3:13:36 PM : Network Model Service Test Client is up and running...
+7/8/2017 3:13:36 PM : Result directory: ../Results
+7/8/2017 3:13:39 PM : Apply update method started.
+7/8/2017 3:13:42 PM : Apply update method finished. 
+Update result: Failed
+Message: Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001)..
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000001
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000001
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x0000000300000001
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000001
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x0000000500000001
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000001
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x0000000700000001
+
+7/8/2017 3:16:53 PM : Network Model Service Test Client is up and running...
+7/8/2017 3:16:54 PM : Result directory: ../Results
+7/8/2017 3:16:56 PM : Apply update method started.
+7/8/2017 3:16:58 PM : Apply update method finished. 
+Update result: Failed
+Message: Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002)..
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000002
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000002
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x0000000300000001
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000002
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x0000000500000002
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000001
+Client globalId: 0x00000007ffffffff	 - Server globalId: 0x0000000700000001
+

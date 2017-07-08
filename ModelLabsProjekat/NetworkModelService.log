@@ -22,3 +22,64 @@
 7/8/2017 2:55:49 PM : Trace level: Info
 7/8/2017 2:55:49 PM : The Network Model Service is started.
 7/8/2017 2:55:49 PM : Press <Enter> to stop the service.
+7/8/2017 3:06:48 PM : Starting Network Model Service...
+7/8/2017 3:06:50 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 3:06:50 PM : Endpoints:
+7/8/2017 3:06:50 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 3:06:50 PM : Connection string: ../NetworkModelData.data
+7/8/2017 3:06:50 PM : Trace level: Info
+7/8/2017 3:06:50 PM : The Network Model Service is started.
+7/8/2017 3:06:50 PM : Press <Enter> to stop the service.
+7/8/2017 3:07:07 PM : Applying  delta to network model.
+7/8/2017 3:07:07 PM : Failed to sort delta operations because there are some insert operations (count = 1) whose type (e.g 2) is not specified in the given list of types.
+7/8/2017 3:07:07 PM : Applying delta to network model failed. Invalid delta. Some insert operations (count = 1) whose type (e.g 2) is not correct..
+7/8/2017 3:12:14 PM : Starting Network Model Service...
+7/8/2017 3:12:19 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 3:12:19 PM : Endpoints:
+7/8/2017 3:12:19 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 3:12:19 PM : Connection string: ../NetworkModelData.data
+7/8/2017 3:12:19 PM : Trace level: Info
+7/8/2017 3:12:19 PM : The Network Model Service is started.
+7/8/2017 3:12:19 PM : Press <Enter> to stop the service.
+7/8/2017 3:12:33 PM : Applying  delta to network model.
+7/8/2017 3:12:33 PM : Failed to sort delta operations because there are some insert operations (count = 1) whose type (e.g 2) is not specified in the given list of types.
+7/8/2017 3:12:34 PM : Applying delta to network model failed. Invalid delta. Some insert operations (count = 1) whose type (e.g 2) is not correct..
+7/8/2017 3:13:22 PM : Starting Network Model Service...
+7/8/2017 3:13:27 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 3:13:27 PM : Endpoints:
+7/8/2017 3:13:27 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 3:13:27 PM : Connection string: ../NetworkModelData.data
+7/8/2017 3:13:27 PM : Trace level: Info
+7/8/2017 3:13:27 PM : The Network Model Service is started.
+7/8/2017 3:13:27 PM : Press <Enter> to stop the service.
+7/8/2017 3:13:41 PM : Applying  delta to network model.
+7/8/2017 3:13:41 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 3:13:41 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 3:13:41 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 3:13:41 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 3:13:41 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:13:41 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:13:41 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001)..
+7/8/2017 3:16:39 PM : Starting Network Model Service...
+7/8/2017 3:16:39 PM : Inserting entity with GID (0000000100000001).
+7/8/2017 3:16:40 PM : Inserting entity with GID (0000000200000001).
+7/8/2017 3:16:40 PM : Inserting entity with GID (0000000400000001).
+7/8/2017 3:16:40 PM : Inserting entity with GID (0000000500000001).
+7/8/2017 3:16:40 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:16:40 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:16:40 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000001).
+7/8/2017 3:16:42 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 3:16:42 PM : Endpoints:
+7/8/2017 3:16:42 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 3:16:42 PM : Connection string: ../NetworkModelData.data
+7/8/2017 3:16:42 PM : Trace level: Info
+7/8/2017 3:16:42 PM : The Network Model Service is started.
+7/8/2017 3:16:42 PM : Press <Enter> to stop the service.
+7/8/2017 3:16:58 PM : Applying  delta to network model.
+7/8/2017 3:16:58 PM : Inserting entity with GID (0000000100000002).
+7/8/2017 3:16:58 PM : Inserting entity with GID (0000000200000002).
+7/8/2017 3:16:58 PM : Inserting entity with GID (0000000400000002).
+7/8/2017 3:16:58 PM : Inserting entity with GID (0000000500000002).
+7/8/2017 3:16:58 PM : Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:16:58 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002).
+7/8/2017 3:16:58 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000002) into model. Unknown property id = SWITCHSCH_SWITCH for entity (GID = 0x0000000500000002)..
