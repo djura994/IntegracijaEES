@@ -16,200 +16,200 @@ using FTN.Services.NetworkModelService.TestClient;
 
 namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 {
-	public class TestGda : IDisposable
-	{			
+    public class TestGda : IDisposable
+    {
 
-		private ModelResourcesDesc modelResourcesDesc = new ModelResourcesDesc();
+        private ModelResourcesDesc modelResourcesDesc = new ModelResourcesDesc();
 
-		private NetworkModelGDAProxy gdaQueryProxy = null;
-		private NetworkModelGDAProxy GdaQueryProxy
-		{
-			get
-			{
-				if (gdaQueryProxy != null)
-				{
-					gdaQueryProxy.Abort();
+        private NetworkModelGDAProxy gdaQueryProxy = null;
+        private NetworkModelGDAProxy GdaQueryProxy
+        {
+            get
+            {
+                if (gdaQueryProxy != null)
+                {
+                    gdaQueryProxy.Abort();
                     gdaQueryProxy = null;
-				}
+                }
 
-				gdaQueryProxy = new NetworkModelGDAProxy("NetworkModelGDAEndpoint");
-				gdaQueryProxy.Open();
+                gdaQueryProxy = new NetworkModelGDAProxy("NetworkModelGDAEndpoint");
+                gdaQueryProxy.Open();
 
-				return gdaQueryProxy;
-			}
-		}
-		
-		public TestGda()
-		{
-		}
+                return gdaQueryProxy;
+            }
+        }
 
-		#region GDAQueryService
+        public TestGda()
+        {
+        }
 
-		public ResourceDescription GetValues(long globalId)
-		{
+        #region GDAQueryService
+
+        public ResourceDescription GetValues(long globalId)
+        {
             string message = "Getting values method started.";
             Console.WriteLine(message);
             CommonTrace.WriteTrace(CommonTrace.TraceError, message);
 
-			XmlTextWriter xmlWriter = null;
-			ResourceDescription rd = null;
-						
-			try
-			{
-				short type = ModelCodeHelper.ExtractTypeFromGlobalId(globalId);
-				List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds((DMSType)type);
+            XmlTextWriter xmlWriter = null;
+            ResourceDescription rd = null;
+
+            try
+            {
+                short type = ModelCodeHelper.ExtractTypeFromGlobalId(globalId);
+                List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds((DMSType)type);
 
                 rd = GdaQueryProxy.GetValues(globalId, properties);
 
                 xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetValues_Results.xml", Encoding.Unicode);
-				xmlWriter.Formatting = Formatting.Indented;
-				rd.ExportToXml(xmlWriter);
-				xmlWriter.Flush();
+                xmlWriter.Formatting = Formatting.Indented;
+                rd.ExportToXml(xmlWriter);
+                xmlWriter.Flush();
 
                 message = "Getting values method successfully finished.";
                 Console.WriteLine(message);
                 CommonTrace.WriteTrace(CommonTrace.TraceError, message);
-			}
-			catch (Exception e)
+            }
+            catch (Exception e)
             {
                 message = string.Format("Getting values method for entered id = {0} failed.\n\t{1}", globalId, e.Message);
                 Console.WriteLine(message);
                 CommonTrace.WriteTrace(CommonTrace.TraceError, message);
-   			}
-			finally
-			{
-				if (xmlWriter != null)
-				{
-					xmlWriter.Close();
-				}
-			}
+            }
+            finally
+            {
+                if (xmlWriter != null)
+                {
+                    xmlWriter.Close();
+                }
+            }
 
-			return rd;
-		}
+            return rd;
+        }
 
-		public List<long> GetExtentValues(ModelCode modelCode)
-		{
+        public List<long> GetExtentValues(ModelCode modelCode)
+        {
             string message = "Getting extent values method started.";
             Console.WriteLine(message);
             CommonTrace.WriteTrace(CommonTrace.TraceError, message);
 
-			XmlTextWriter xmlWriter = null;
-			int iteratorId = 0;
-			List<long> ids = new List<long>();
+            XmlTextWriter xmlWriter = null;
+            int iteratorId = 0;
+            List<long> ids = new List<long>();
 
-			try
-			{				
-				int numberOfResources = 2;
-				int resourcesLeft = 0;
+            try
+            {
+                int numberOfResources = 2;
+                int resourcesLeft = 0;
 
                 List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds(modelCode);
-				
-				iteratorId = GdaQueryProxy.GetExtentValues(modelCode, properties);
-				resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
-								
 
-				xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetExtentValues_Results.xml", Encoding.Unicode);
-				xmlWriter.Formatting = Formatting.Indented;
+                iteratorId = GdaQueryProxy.GetExtentValues(modelCode, properties);
+                resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
 
-				while (resourcesLeft > 0)
-				{
-					List<ResourceDescription> rds = GdaQueryProxy.IteratorNext(numberOfResources, iteratorId);
 
-					for (int i = 0; i < rds.Count; i++)
-					{
-						ids.Add(rds[i].Id);
-						rds[i].ExportToXml(xmlWriter);
-						xmlWriter.Flush();
-					}
+                xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetExtentValues_Results.xml", Encoding.Unicode);
+                xmlWriter.Formatting = Formatting.Indented;
 
-					resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
-				}
+                while (resourcesLeft > 0)
+                {
+                    List<ResourceDescription> rds = GdaQueryProxy.IteratorNext(numberOfResources, iteratorId);
 
-				GdaQueryProxy.IteratorClose(iteratorId);
+                    for (int i = 0; i < rds.Count; i++)
+                    {
+                        ids.Add(rds[i].Id);
+                        rds[i].ExportToXml(xmlWriter);
+                        xmlWriter.Flush();
+                    }
+
+                    resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
+                }
+
+                GdaQueryProxy.IteratorClose(iteratorId);
 
                 message = "Getting extent values method successfully finished.";
                 Console.WriteLine(message);
                 CommonTrace.WriteTrace(CommonTrace.TraceError, message);
-			
-			}			
-			catch (Exception e)
+
+            }
+            catch (Exception e)
             {
                 message = string.Format("Getting extent values method failed for {0}.\n\t{1}", modelCode, e.Message);
                 Console.WriteLine(message);
                 CommonTrace.WriteTrace(CommonTrace.TraceError, message);
-			}
-			finally
-			{				
-				if (xmlWriter != null)
-				{
-					xmlWriter.Close();
-				}
-			}
-			
-			return ids;
-		}
+            }
+            finally
+            {
+                if (xmlWriter != null)
+                {
+                    xmlWriter.Close();
+                }
+            }
 
-		public List<long> GetRelatedValues(long sourceGlobalId, Association association)
-		{
+            return ids;
+        }
+
+        public List<long> GetRelatedValues(long sourceGlobalId, Association association)
+        {
             string message = "Getting related values method started.";
             Console.WriteLine(message);
             CommonTrace.WriteTrace(CommonTrace.TraceError, message);
-			
-			List<long> resultIds = new List<long>();
 
-			
-			XmlTextWriter xmlWriter = null;
-			int numberOfResources = 2;
+            List<long> resultIds = new List<long>();
 
-			try
-			{						
-				List<ModelCode> properties = new List<ModelCode>();
+
+            XmlTextWriter xmlWriter = null;
+            int numberOfResources = 2;
+
+            try
+            {
+                List<ModelCode> properties = new List<ModelCode>();
                 properties.Add(ModelCode.IDOBJ_ALIASNAME);
                 properties.Add(ModelCode.IDOBJ_MRID);
                 properties.Add(ModelCode.IDOBJ_NAME);
-						
-				int iteratorId = GdaQueryProxy.GetRelatedValues(sourceGlobalId, properties, association);
-				int resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
+
+                int iteratorId = GdaQueryProxy.GetRelatedValues(sourceGlobalId, properties, association);
+                int resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
 
                 xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetRelatedValues_Results.xml", Encoding.Unicode);
-                xmlWriter.Formatting = Formatting.Indented; 
+                xmlWriter.Formatting = Formatting.Indented;
 
-				while (resourcesLeft > 0)
-				{
-					List<ResourceDescription> rds =  GdaQueryProxy.IteratorNext(numberOfResources, iteratorId);
+                while (resourcesLeft > 0)
+                {
+                    List<ResourceDescription> rds = GdaQueryProxy.IteratorNext(numberOfResources, iteratorId);
 
-					for (int i = 0; i < rds.Count; i++)
-					{
-						resultIds.Add(rds[i].Id);
-						rds[i].ExportToXml(xmlWriter);
-						xmlWriter.Flush();
-					}
-							
-					resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
-				}
+                    for (int i = 0; i < rds.Count; i++)
+                    {
+                        resultIds.Add(rds[i].Id);
+                        rds[i].ExportToXml(xmlWriter);
+                        xmlWriter.Flush();
+                    }
 
-				GdaQueryProxy.IteratorClose(iteratorId);
+                    resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
+                }
+
+                GdaQueryProxy.IteratorClose(iteratorId);
 
                 message = "Getting related values method successfully finished.";
                 Console.WriteLine(message);
-                CommonTrace.WriteTrace(CommonTrace.TraceError, message);				
-			}
-			catch (Exception e)
-			{
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+            catch (Exception e)
+            {
                 message = string.Format("Getting related values method  failed for sourceGlobalId = {0} and association (propertyId = {1}, type = {2}). Reason: {3}", sourceGlobalId, association.PropertyId, association.Type, e.Message);
                 Console.WriteLine(message);
                 CommonTrace.WriteTrace(CommonTrace.TraceError, message);
             }
-			finally
-			{
-				if (xmlWriter != null)
-				{
-					xmlWriter.Close();
-				}
-			}
-						
-			return resultIds;
-		}
+            finally
+            {
+                if (xmlWriter != null)
+                {
+                    xmlWriter.Close();
+                }
+            }
+
+            return resultIds;
+        }
 
         #endregion GDAQueryService
 
@@ -273,7 +273,7 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 
             return ids;
         }
-        
+
         #region GDAUpdate Service
 
         public UpdateResult TestApplyDeltaInsert()
@@ -757,8 +757,375 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
         #endregion Test Methods
 
         public void Dispose()
-		{
-			GC.SuppressFinalize(this);
-		}
-	}
+        {
+            GC.SuppressFinalize(this);
+        }
+
+        public List<List<string>> GetValuesAndPath(long globalId)
+        {
+            List<string> path = new List<string>();
+            List<string> strProps = new List<string>();
+            string message = "Getting values method started.";
+            Console.WriteLine(message);
+            CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+
+            XmlTextWriter xmlWriter = null;
+            ResourceDescription rd = null;
+
+            try
+            {
+                short type = ModelCodeHelper.ExtractTypeFromGlobalId(globalId);
+                List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds((DMSType)type);
+
+                rd = GdaQueryProxy.GetValues(globalId, properties);
+
+                foreach (Property prop in rd.Properties)
+                {
+                    switch (prop.Type)
+                    {
+                        case PropertyType.Bool:
+                            strProps.Add(prop.Id.ToString() + "~" + prop.AsBool().ToString());
+                            break;
+                        case PropertyType.Int32:
+                            strProps.Add(prop.Id.ToString() + "~" + prop.AsInt().ToString());
+                            break;
+                        case PropertyType.Int64:
+                            if (prop.Id.ToString().Contains("DATE"))
+                            {
+                                strProps.Add(prop.Id.ToString() + "~" + new DateTime(prop.AsLong()).ToString());
+                            }
+                            else
+                            {
+                                strProps.Add(prop.Id.ToString() + "~" + prop.AsLong().ToString());
+                            }
+                            break;
+                        case PropertyType.Float:
+                            strProps.Add(prop.Id.ToString() + "~" + prop.AsFloat().ToString());
+                            break;
+                        case PropertyType.String:
+                            strProps.Add(prop.Id.ToString() + "~" + prop.AsString().ToString());
+                            break;
+                        case PropertyType.Reference:
+                            strProps.Add(prop.Id.ToString() + "~" + prop.AsReference().ToString());
+                            break;
+                        case PropertyType.Enum:
+                            strProps.Add(prop.Id.ToString() + "~" + prop.AsEnum().ToString());
+                            break;
+                        case PropertyType.ReferenceVector:
+                            string val = prop.Id.ToString() + "~";
+                            foreach (var item in prop.AsLongs())
+                            {
+                                val += item.ToString() + "\n";
+                            }
+                            strProps.Add(val);
+                            break;
+                        default:
+                            strProps.Add(prop.Id.ToString() + "~" + "Empty");
+                            break;
+                    }
+                }
+
+                xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetValues_Results.xml", Encoding.Unicode);
+                path.Add(Config.Instance.ResultDirecotry + "\\GetValues_Results.xml");
+                xmlWriter.Formatting = Formatting.Indented;
+                rd.ExportToXml(xmlWriter);
+                xmlWriter.Flush();
+
+                message = "Getting values method successfully finished.";
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+            catch (Exception e)
+            {
+                message = string.Format("Getting values method for entered id = {0} failed.\n\t{1}", globalId, e.Message);
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+            finally
+            {
+                if (xmlWriter != null)
+                {
+                    xmlWriter.Close();
+                }
+            }
+            List<List<string>> strRet = new List<List<string>>();
+            strRet.Add(path);
+            strRet.Add(strProps);
+            return strRet;
+        }
+
+        public List<List<string>> GetExtentValuesAndPath(ModelCode modelCode)
+        {
+            string message = "Getting extent values method started.";
+            List<string> path = new List<string>();
+            List<string> strProps = new List<string>();
+            Console.WriteLine(message);
+            CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+
+            XmlTextWriter xmlWriter = null;
+            int iteratorId = 0;
+            List<long> ids = new List<long>();
+
+            try
+            {
+                int numberOfResources = 2;
+                int resourcesLeft = 0;
+
+                List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds(modelCode);
+
+                iteratorId = GdaQueryProxy.GetExtentValues(modelCode, properties);
+                resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
+
+
+                xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetExtentValues_Results.xml", Encoding.Unicode);
+                path.Add(Config.Instance.ResultDirecotry + "\\GetExtentValues_Results.xml");
+                xmlWriter.Formatting = Formatting.Indented;
+
+                while (resourcesLeft > 0)
+                {
+                    List<ResourceDescription> rds = GdaQueryProxy.IteratorNext(numberOfResources, iteratorId);
+
+                    for (int i = 0; i < rds.Count; i++)
+                    {
+                        ids.Add(rds[i].Id);
+                        rds[i].ExportToXml(xmlWriter);
+                        foreach (Property prop in rds[i].Properties)
+                        {
+                            switch (prop.Type)
+                            {
+                                case PropertyType.Bool:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsBool().ToString());
+                                    break;
+                                case PropertyType.Int32:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsInt().ToString());
+                                    break;
+                                case PropertyType.Int64:
+                                    if (prop.Id.ToString().Contains("DATE"))
+                                    {
+                                        strProps.Add(prop.Id.ToString() + "~" + new DateTime(prop.AsLong()).ToString());
+                                    }
+                                    else
+                                    {
+                                        strProps.Add(prop.Id.ToString() + "~" + prop.AsLong().ToString());
+                                    }
+                                    break;
+                                case PropertyType.Float:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsFloat().ToString());
+                                    break;
+                                case PropertyType.String:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsString().ToString());
+                                    break;
+                                case PropertyType.Reference:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsReference().ToString());
+                                    break;
+                                case PropertyType.Enum:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsEnum().ToString());
+                                    break;
+                                case PropertyType.ReferenceVector:
+                                    string val = prop.Id.ToString() + "~";
+                                    foreach (var item in prop.AsLongs())
+                                    {
+                                        val += item.ToString() + "\n";
+                                    }
+                                    strProps.Add(val);
+                                    break;
+                                default:
+                                    strProps.Add(prop.Id.ToString() + "~" + "Empty");
+                                    break;
+                            }
+                        }
+                        xmlWriter.Flush();
+                    }
+
+                    resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
+                }
+
+                GdaQueryProxy.IteratorClose(iteratorId);
+
+                message = "Getting extent values method successfully finished.";
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+
+            }
+            catch (Exception e)
+            {
+                message = string.Format("Getting extent values method failed for {0}.\n\t{1}", modelCode, e.Message);
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+            finally
+            {
+                if (xmlWriter != null)
+                {
+                    xmlWriter.Close();
+                }
+            }
+
+
+            List<List<string>> strRet = new List<List<string>>();
+            strRet.Add(path);
+            strRet.Add(strProps);
+            return strRet;
+
+        }
+
+        public List<string> GetReferences(long globalId)
+        {
+            string message = "Getting references method started.";
+            List<string> refs = new List<string>();
+            Console.WriteLine(message);
+            CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+
+            ResourceDescription rd = null;
+
+            try
+            {
+                short type = ModelCodeHelper.ExtractTypeFromGlobalId(globalId);
+                List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds((DMSType)type);
+                rd = GdaQueryProxy.GetValues(globalId, properties);
+
+                foreach (Property prop in rd.Properties)
+                {
+                    if (prop.Type == PropertyType.Reference)
+                    {
+                        refs.Add(prop.Id.ToString());
+                    }
+                    else if (prop.Type == PropertyType.ReferenceVector)
+                    {
+                        refs.Add(prop.Id.ToString());
+                    }
+                }
+
+                message = "Getting references method successfully finished.";
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+            catch (Exception e)
+            {
+                message = string.Format("Getting references method for entered id = {0} failed.\n\t{1}", globalId, e.Message);
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+
+            return refs;
+        }
+
+        public List<List<string>> GetRelatedValuesAndPath(long sourceGlobalId, Association association)
+        {
+            string message = "Getting related values method started.";
+            List<string> path = new List<string>();
+            List<string> strProps = new List<string>();
+            Console.WriteLine(message);
+            CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+
+            List<long> resultIds = new List<long>();
+
+
+            XmlTextWriter xmlWriter = null;
+            int numberOfResources = 2;
+
+            try
+            {
+                List<ModelCode> properties = new List<ModelCode>();
+                properties.Add(ModelCode.IDOBJ_ALIASNAME);
+                properties.Add(ModelCode.IDOBJ_MRID);
+                properties.Add(ModelCode.IDOBJ_NAME);
+
+                int iteratorId = GdaQueryProxy.GetRelatedValues(sourceGlobalId, properties, association);
+                int resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
+
+                xmlWriter = new XmlTextWriter(Config.Instance.ResultDirecotry + "\\GetRelatedValues_Results.xml", Encoding.Unicode);
+                path.Add(Config.Instance.ResultDirecotry + "\\GetRelatedValues_Results.xml");
+                xmlWriter.Formatting = Formatting.Indented;
+
+                while (resourcesLeft > 0)
+                {
+                    List<ResourceDescription> rds = GdaQueryProxy.IteratorNext(numberOfResources, iteratorId);
+
+                    for (int i = 0; i < rds.Count; i++)
+                    {
+                        resultIds.Add(rds[i].Id);
+                        properties.Clear();
+                        properties = modelResourcesDesc.GetAllPropertyIds((DMSType)ModelCodeHelper.ExtractTypeFromGlobalId(rds[i].Id));
+                        ResourceDescription rd = GdaQueryProxy.GetValues(rds[i].Id, properties);
+                        rd.ExportToXml(xmlWriter);
+                        foreach (Property prop in rd.Properties)
+                        {
+                            switch (prop.Type)
+                            {
+                                case PropertyType.Bool:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsBool().ToString());
+                                    break;
+                                case PropertyType.Int32:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsInt().ToString());
+                                    break;
+                                case PropertyType.Int64:
+                                    if (prop.Id.ToString().Contains("DATE"))
+                                    {
+                                        strProps.Add(prop.Id.ToString() + "~" + new DateTime(prop.AsLong()).ToString());
+                                    }
+                                    else
+                                    {
+                                        strProps.Add(prop.Id.ToString() + "~" + prop.AsLong().ToString());
+                                    }
+                                    break;
+                                case PropertyType.Float:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsFloat().ToString());
+                                    break;
+                                case PropertyType.String:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsString().ToString());
+                                    break;
+                                case PropertyType.Reference:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsReference().ToString());
+                                    break;
+                                case PropertyType.Enum:
+                                    strProps.Add(prop.Id.ToString() + "~" + prop.AsEnum().ToString());
+                                    break;
+                                case PropertyType.ReferenceVector:
+                                    string val = prop.Id.ToString() + "~";
+                                    foreach (var item in prop.AsLongs())
+                                    {
+                                        val += item.ToString() + "\n";
+                                    }
+                                    strProps.Add(val);
+                                    break;
+                                default:
+                                    strProps.Add(prop.Id.ToString() + "~" + "Empty");
+                                    break;
+                            }
+                        }
+                        xmlWriter.Flush();
+                    }
+
+                    resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);
+                }
+
+                GdaQueryProxy.IteratorClose(iteratorId);
+
+                message = "Getting related values method successfully finished.";
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+            catch (Exception e)
+            {
+                message = string.Format("Getting related values method  failed for sourceGlobalId = {0} and association (propertyId = {1}, type = {2}). Reason: {3}", sourceGlobalId, association.PropertyId, association.Type, e.Message);
+                Console.WriteLine(message);
+                CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+            }
+            finally
+            {
+                if (xmlWriter != null)
+                {
+                    xmlWriter.Close();
+                }
+            }
+
+            List<List<string>> strRet = new List<List<string>>();
+            strRet.Add(path);
+            strRet.Add(strProps);
+            return strRet;
+        }
+
+
+    }
 }

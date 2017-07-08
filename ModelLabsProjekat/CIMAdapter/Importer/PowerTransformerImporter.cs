@@ -219,7 +219,7 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
                 importHelper.DefineIDMapping(cimSwitchSchedule.ID, gid);
 
                 ////populate ResourceDescription
-                PowerTransformerConverter.PopulateSwitchScheduleProperties(cimSwitchSchedule, rd);
+                PowerTransformerConverter.PopulateSwitchScheduleProperties(cimSwitchSchedule, rd, importHelper, report);
             }
             return rd;
         }
@@ -254,7 +254,7 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
             ResourceDescription rd = null;
             if (cimRegulationSchedule != null)
             {
-                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.REGUSCHEDULE, importHelper.CheckOutIndexForDMSType(DMSType.REGUSCHEDULE));
+                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.REGULATIONSCHEDULE, importHelper.CheckOutIndexForDMSType(DMSType.REGULATIONSCHEDULE));
                 rd = new ResourceDescription(gid);
                 importHelper.DefineIDMapping(cimRegulationSchedule.ID, gid);
 
@@ -294,7 +294,7 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
             ResourceDescription rd = null;
             if (cimRegularTimePoint != null)
             {
-                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.RTP, importHelper.CheckOutIndexForDMSType(DMSType.RTP));
+                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.REGULARTIMEPOINT, importHelper.CheckOutIndexForDMSType(DMSType.REGULARTIMEPOINT));
                 rd = new ResourceDescription(gid);
                 importHelper.DefineIDMapping(cimRegularTimePoint.ID, gid);
 

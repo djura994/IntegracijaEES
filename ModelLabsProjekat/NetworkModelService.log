@@ -1,0 +1,8 @@
+7/8/2017 2:43:46 PM : Starting Network Model Service...
+7/8/2017 2:43:52 PM : The WCF service GenericDataAccess is ready.
+7/8/2017 2:43:52 PM : Endpoints:
+7/8/2017 2:43:52 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+7/8/2017 2:43:52 PM : Connection string: ../NetworkModelData.data
+7/8/2017 2:43:52 PM : Trace level: Info
+7/8/2017 2:43:52 PM : The Network Model Service is started.
+7/8/2017 2:43:52 PM : Press <Enter> to stop the service.
