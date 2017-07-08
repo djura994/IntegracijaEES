@@ -111,6 +111,8 @@
             }
         }
 
+
+
         #endregion Populate ResourceDescription
 
         #region Enums convert

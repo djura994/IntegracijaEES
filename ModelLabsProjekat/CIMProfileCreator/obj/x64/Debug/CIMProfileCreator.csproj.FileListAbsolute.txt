@@ -18,3 +18,4 @@ C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMProfileCreator\obj\x6
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMProfileCreator\obj\x64\Debug\CIMProfileCreator.csproj.GenerateResource.Cache
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
 C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb
+C:\Users\Djura\Desktop\IntegracijaEES\ModelLabsProjekat\CIMProfileCreator\obj\x64\Debug\CIMProfileCreator.csprojResolveAssemblyReference.cache
