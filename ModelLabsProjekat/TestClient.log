@@ -1,0 +1,18 @@
+7/8/2017 2:50:48 PM : Network Model Service Test Client is up and running...
+7/8/2017 2:50:48 PM : Result directory: ../Results
+7/8/2017 2:50:55 PM : Apply update method started.
+7/8/2017 2:50:55 PM : Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
+7/8/2017 2:50:55 PM : Apply update method failed. Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
+
+7/8/2017 2:51:10 PM : Entering entity id failed. Please use hex (0x) or decimal format.
+7/8/2017 2:51:10 PM : GetValues failed. Input string was not in a correct format.
+7/8/2017 2:51:19 PM : Apply update method started.
+7/8/2017 2:51:19 PM : Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
+7/8/2017 2:51:19 PM : Apply update method failed. Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
+
+7/8/2017 2:55:57 PM : Network Model Service Test Client is up and running...
+7/8/2017 2:55:57 PM : Result directory: ../Results
+7/8/2017 2:56:00 PM : Apply update method started.
+7/8/2017 2:56:00 PM : Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
+7/8/2017 2:56:00 PM : Apply update method failed. Failed to get model type code for DMS type: REGULATINGCONTROL. Invalid DMS type
+
